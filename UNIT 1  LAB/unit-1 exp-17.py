@@ -1,0 +1,15 @@
+from transformers import BertTokenizer,BertModel
+
+tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
+
+model = BertModel.from_pretrained("bert-base-uncased")
+
+text = "Artificial Intelligence"
+
+inputs = tokenizer(text, return_tensors="pt")
+
+outputs = model(**inputs)
+
+embedding = outputs.last_hidden_state
+
+print(embedding.shape)
