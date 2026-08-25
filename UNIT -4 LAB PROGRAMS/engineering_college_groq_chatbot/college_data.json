@@ -1,0 +1,58 @@
+[
+    {
+        "keywords": ["fee", "fees", "tuition", "cost", "payment", "college fee"],
+        "answer": "College fees depend on the program, admission category and academic year. For the exact current fee amount, students should check the official fee notification or contact the accounts office."
+    },
+    {
+        "keywords": ["cse", "computer science", "computer engineering"],
+        "answer": "Computer Science and Engineering (CSE) covers programming, data structures, algorithms, databases, operating systems, computer networks, artificial intelligence, machine learning and software development."
+    },
+    {
+        "keywords": ["department", "departments", "branch", "branches"],
+        "answer": "Engineering colleges commonly offer departments such as Computer Science and Engineering, Artificial Intelligence, Electronics and Communication Engineering, Electrical and Electronics Engineering, Mechanical Engineering and Civil Engineering. Check your college's official website for the exact list."
+    },
+    {
+        "keywords": ["exam", "exams", "examination", "semester", "internal", "test"],
+        "answer": "Examination dates are published by the examination cell. Students should check the student portal, department notice board or official examination notification for the latest schedule."
+    },
+    {
+        "keywords": ["attendance", "minimum attendance"],
+        "answer": "Students must maintain the minimum attendance required by the applicable university and college regulations. Contact your department for the current official attendance requirement."
+    },
+    {
+        "keywords": ["placement", "placements", "job", "jobs", "company", "companies", "recruitment"],
+        "answer": "The placement cell generally coordinates campus recruitment, aptitude preparation, technical training, interview preparation, internships and company placement drives."
+    },
+    {
+        "keywords": ["hostel", "accommodation", "room"],
+        "answer": "Hostel availability, room allocation, fees and hostel rules are managed by the college hostel administration. Students should contact the hostel office for current details."
+    },
+    {
+        "keywords": ["library", "books", "book", "journal"],
+        "answer": "The college library provides textbooks, reference books, journals, digital resources and study facilities. Check the library rules for borrowing limits and timings."
+    },
+    {
+        "keywords": ["bonafide", "certificate", "documents"],
+        "answer": "Students can normally request certificates such as bonafide certificates through the appropriate college office or student portal. Check the current procedure with the administration office."
+    },
+    {
+        "keywords": ["timetable", "time table", "schedule", "class"],
+        "answer": "Class timetables are normally published by the respective department or through the student portal. Check the latest timetable before attending classes."
+    },
+    {
+        "keywords": ["hod", "head of department"],
+        "answer": "The current Head of Department details should be obtained from the official department notice board, student portal or college website because faculty assignments can change."
+    },
+    {
+        "keywords": ["admission", "admissions", "join", "joining"],
+        "answer": "Admission requirements depend on the program and admission category. Students should follow the official admission notification and contact the admissions office for current requirements."
+    },
+    {
+        "keywords": ["internship", "internships"],
+        "answer": "Students can look for internships through the college placement/career cell, department announcements and recognized internship platforms. Eligibility varies by company and program."
+    },
+    {
+        "keywords": ["contact", "office", "administration"],
+        "answer": "For official college-specific contact details, students should use the contact information published on their college's official website or student portal."
+    }
+]

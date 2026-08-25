@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eaf3ff, #f7f9fc);
+    color: #172033;
+}
+
+.container {
+    width: 92%;
+    max-width: 1000px;
+    margin: 35px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    background: #173f6b;
+    color: white;
+}
+
+.icon {
+    font-size: 48px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+header p {
+    margin: 7px 0 0;
+    opacity: 0.9;
+}
+
+main {
+    padding: 30px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.description {
+    color: #657184;
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.examples button {
+    border: 1px solid #bfd1e5;
+    background: #f5f9ff;
+    color: #174d80;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.examples button:hover {
+    background: #e4effc;
+}
+
+textarea {
+    width: 100%;
+    min-height: 130px;
+    resize: vertical;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #1769d1;
+}
+
+#generateBtn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #1769d1;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#generateBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#status {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.loading {
+    background: #fff7df;
+}
+
+.success {
+    background: #e7f7ed;
+}
+
+.error {
+    background: #ffe9e9;
+    color: #a12626;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.result img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #dce2e9;
+    background: #f5f5f5;
+}
+
+.generated-prompt {
+    background: #f4f7fb;
+    border: 1px solid #dbe3ec;
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    padding: 18px 30px;
+    text-align: center;
+    color: #687386;
+    font-size: 13px;
+    border-top: 1px solid #e4e8ed;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

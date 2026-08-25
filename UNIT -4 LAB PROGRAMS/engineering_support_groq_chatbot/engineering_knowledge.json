@@ -1,0 +1,62 @@
+[
+    {
+        "topic": "Python ModuleNotFoundError",
+        "keywords": ["python", "modulenotfounderror", "module", "pip", "package"],
+        "answer": "ModuleNotFoundError occurs when Python cannot find an imported module. Check the module name, install it using 'python -m pip install package_name', and verify that VS Code is using the same Python environment."
+    },
+    {
+        "topic": "C++ Segmentation Fault",
+        "keywords": ["c++", "cpp", "segmentation", "segmentation fault", "pointer", "memory"],
+        "answer": "A segmentation fault commonly occurs because a program accesses invalid memory. Check array bounds, null or dangling pointers, uninitialized pointers, and memory allocated with new/delete."
+    },
+    {
+        "topic": "Ohm's Law",
+        "keywords": ["ohm", "voltage", "current", "resistance", "resistor"],
+        "answer": "Ohm's law is V = I × R, where V is voltage in volts, I is current in amperes, and R is resistance in ohms. Therefore I = V/R and R = V/I."
+    },
+    {
+        "topic": "TCP and UDP",
+        "keywords": ["tcp", "udp", "network", "transport", "protocol"],
+        "answer": "TCP is connection-oriented and provides reliable, ordered delivery. UDP is connectionless and has lower overhead but does not guarantee delivery or ordering. TCP is commonly used when reliability matters, while UDP is useful for applications such as real-time streaming and gaming."
+    },
+    {
+        "topic": "DBMS Normalization",
+        "keywords": ["dbms", "database", "normalization", "1nf", "2nf", "3nf"],
+        "answer": "Database normalization organizes data to reduce redundancy and update anomalies. Common normal forms include 1NF, 2NF and 3NF. Each level applies additional rules to improve database structure."
+    },
+    {
+        "topic": "PID Controller",
+        "keywords": ["pid", "controller", "control system", "proportional", "integral", "derivative"],
+        "answer": "A PID controller combines proportional, integral and derivative actions. The proportional term responds to current error, the integral term reduces accumulated steady-state error, and the derivative term responds to the rate of change of error."
+    },
+    {
+        "topic": "Transformer",
+        "keywords": ["transformer", "electrical", "voltage", "primary", "secondary"],
+        "answer": "A transformer transfers electrical energy between circuits using electromagnetic induction. The turns ratio determines whether the voltage is stepped up or stepped down."
+    },
+    {
+        "topic": "Transistor",
+        "keywords": ["transistor", "bjt", "mosfet", "electronics", "amplifier", "switch"],
+        "answer": "A transistor is a semiconductor device commonly used for switching and amplification. BJT and MOSFET are two major transistor families."
+    },
+    {
+        "topic": "Motor Troubleshooting",
+        "keywords": ["motor", "motor not starting", "motor troubleshooting", "electrical motor"],
+        "answer": "If a motor does not start, first follow electrical safety procedures. Check the power supply, protection devices, connections, control circuit, overload condition, and mechanical obstruction. Qualified personnel should perform electrical measurements."
+    },
+    {
+        "topic": "Artificial Intelligence",
+        "keywords": ["ai", "artificial intelligence", "machine learning", "deep learning"],
+        "answer": "Artificial intelligence enables computer systems to perform tasks associated with human intelligence. Machine learning is a subset of AI that learns patterns from data, while deep learning uses multi-layer neural networks."
+    },
+    {
+        "topic": "Data Structures",
+        "keywords": ["data structure", "array", "linked list", "stack", "queue", "tree", "graph"],
+        "answer": "Data structures organize data for efficient storage and processing. Arrays, linked lists, stacks, queues, trees and graphs are common data structures, each suited to different operations."
+    },
+    {
+        "topic": "Computer Networks",
+        "keywords": ["computer network", "ip", "router", "switch", "networking", "osi"],
+        "answer": "Computer networking connects devices so they can communicate and share resources. Common concepts include IP addressing, routing, switching, protocols and the OSI/TCP-IP models."
+    }
+]

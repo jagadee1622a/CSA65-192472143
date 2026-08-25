@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Text-to-Image AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="icon">🏗️</div>
+        <div>
+            <h1>Engineering Text-to-Image AI</h1>
+            <p>Groq AI Prompt Engineering + Pre-trained Image Model</p>
+        </div>
+    </header>
+
+    <main>
+        <h2>Generate an Engineering Image</h2>
+        <p class="description">
+            Enter an engineering idea and the AI will create a detailed
+            image prompt and generate the image.
+        </p>
+
+        <div class="examples">
+            <button onclick="useExample('A modern cable-stayed bridge over a river')">
+                🌉 Bridge
+            </button>
+            <button onclick="useExample('A futuristic industrial robotic arm working in a smart factory')">
+                🤖 Robot
+            </button>
+            <button onclick="useExample('A modern electric vehicle battery engineering laboratory')">
+                🔋 EV Lab
+            </button>
+            <button onclick="useExample('A large wind turbine farm with electrical engineering equipment')">
+                🌬️ Wind Energy
+            </button>
+        </div>
+
+        <textarea id="prompt"
+            placeholder="Example: Generate a futuristic robotic arm used for automated manufacturing..."></textarea>
+
+        <button id="generateBtn" onclick="generateImage()">
+            Generate Engineering Image
+        </button>
+
+        <div id="status"></div>
+
+        <div id="result" class="result hidden">
+            <h3>Generated Image</h3>
+            <img id="generatedImage" alt="AI generated engineering image">
+
+            <h3>Groq-Generated Image Prompt</h3>
+            <div id="generatedPrompt" class="generated-prompt"></div>
+        </div>
+    </main>
+
+    <footer>
+        Groq is used for intelligent prompt generation. A pre-trained
+        text-to-image model generates the final image.
+    </footer>
+</div>
+
+<script>
+function useExample(text) {
+    document.getElementById("prompt").value = text;
+}
+
+async function generateImage() {
+    const prompt = document.getElementById("prompt").value.trim();
+    const button = document.getElementById("generateBtn");
+    const status = document.getElementById("status");
+    const result = document.getElementById("result");
+
+    if (!prompt) {
+        status.textContent = "Please enter an engineering image idea.";
+        status.className = "error";
+        return;
+    }
+
+    button.disabled = true;
+    button.textContent = "Generating... Please wait";
+    status.textContent = "Groq is creating a detailed engineering prompt...";
+    status.className = "loading";
+    result.classList.add("hidden");
+
+    try {
+        const response = await fetch("/generate", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ prompt: prompt })
+        });
+
+        const data = await response.json();
+
+        if (!data.success) {
+            status.textContent = data.error;
+            status.className = "error";
+            button.disabled = false;
+            button.textContent = "Generate Engineering Image";
+            return;
+        }
+
+        status.textContent = "Image generated successfully!";
+        status.className = "success";
+
+        document.getElementById("generatedImage").src = data.image_url;
+        document.getElementById("generatedPrompt").textContent = data.prompt;
+
+        result.classList.remove("hidden");
+
+    } catch (error) {
+        status.textContent = "Could not connect to the server.";
+        status.className = "error";
+    }
+
+    button.disabled = false;
+    button.textContent = "Generate Engineering Image";
+}
+</script>
+
+</body>
+</html>
