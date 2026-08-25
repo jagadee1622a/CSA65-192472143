@@ -1,0 +1,17 @@
+transformers
+torch
+sentence-transformers
+scikit-learn
+faiss-cpu
+streamlit
+openai
+google-genai
+huggingface-hub
+diffusers
+accelerate
+gTTS
+openai-whisper
+requests
+langchain
+langchain-community
+langchain-core
